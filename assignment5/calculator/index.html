@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Assignment 5, Part 2 - Calculator</title>
+
+</head>
+
+<body>
+	<button onclick="writeMessage()">Click Me</button>
+	<br><br>	
+	<button id="button1" >Click Me - Id </button>
+	<br><br>
+	<button id="button2" >Click Me - Event Listener </button>
+	<br><br>
+	
+	<a  id="btnGoog" href="http://www.google.com">Visit Google</a>
+<!--	<a  id="btnGoog" href="http://www.google.com" onClick="return doChange(this)">Visit Google</a>-->
+	<br><br>
+	
+	Write your Full Name and Click: <input type="text" name="fullName">
+	<br>
+   <button id="button3">Click for Full-Name</button> 
+<!--	<input type="button" id="btnName" value="click - Name">-->
+	<br><br>
+
+	<textarea id="txtArea">This is where the user can enter text...</textarea>
+	<br>
+	<button id="button4">Click Me for Text-Area </button>
+	<br><br>
+	
+	<button id="button5">Click Me for New-Page </button>
+	<br><br>
+	
+<!--
+	<button id="button6">Start</button>
+	</t>
+	<button id="button7">Stop</button>
+	<br><br>
+-->
+	<button id="button6" onclick = start()>Start</button>
+	</t>
+	<button id="button7" onclick = stop()>Stop</button>
+	<br><br>
+	
+	<select id="myPlace">
+	<option value="sanDiego">San Diego</option>
+	<option value="buenosAires">Buenos Aires</option><option value="hamburg">Hamburg</option>
+	<option value="barcelona">Barcelona</option></select>
+	<button id="myChoice" onclick = select()>Select</button>
+	<br><br><br>
+	
+	<form name=calculator>
+	<input type="text" readonly id="result">
+    <br><br>
+	<input type="button" id="seven" value="7" onclick = "calculator.result.value += '7'">	
+	<input type="button" id="eight" value="8" onclick = "calculator.result.value += '8'">
+    <input type="button" id="nine" value="9" onclick = "calculator.result.value += '9'">
+    <input type="button" id="divide" value="/" onclick = "calculator.result.value += '/'">
+    <br>
+    <input type="button" id="four" value="4" onclick = "calculator.result.value += '4'">
+    <input type="button" id="five" value="5" onclick = "calculator.result.value += '5'">
+    <input type="button" id="six" value="6" onclick = "calculator.result.value += '6'">
+    <input type="button" id="multiply" value="*" onclick = "calculator.result.value += '*'">
+    <br>
+    <input type="button" id="one" value="1" onclick = "calculator.result.value += '1'">
+    <input type="button" id="two" value="2" onclick = "calculator.result.value += '2'">
+    <input type="button" id="three" value="3" onclick = "calculator.result.value += '3'">
+    <input type="button" id="subtract" value="-" onclick = "calculator.result.value += '-'">
+    <br>
+    <input type="button" id="zero" value="0" onclick = "calculator.result.value += '0'">
+    <input type="button" id="period" value="."onclick = "calculator.result.value += '.'" >
+    <input type="button" id="add" value="+" onclick = "calculator.result.value += '+'">
+    <input type="button" id="equal" value="=" onclick = "calculator.result.value = eval(result.value)">
+	</form>
+	<br><br>
+	
+	
+<script src="script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+<meta charset="utf-8">
+<title>Assignment 5, Part 3 - Image Rollovers</title>
+<script>
+//02: Helper function to retrienve the ID of each image
+		function getImg() {
+			"use strict";
+			this.image = document.getElementById('id');
+//			var image = document.getElementsByTagName('id');
+			this.imageURL = image.src;
+		}
+//03: Rollover function that performs the rollover effect on each image
+		function Rollover(imageId, imageURL2) {
+			"use strict";
+			var image = imageId;
+			var imageURL = imageURL2;
+		}
+    //04: Create a copy of this function and store it in a variable
+	
+		var copyRollover = Rollover();
+
+//05: Create 3 new properties including newImageURL, image, and oldImageURL
+		Rollover.newImageURL;
+		Rollover.image;
+		Rollover.oldImageURL;
+//06: Store the new image URL in a property
+		Rollover.newImageURL = Rollover.imageURL2;
+//07: Store the old image's ID in a property
+		Rollover.image = getImg.image;
+ //08: Store the old image URL in a property
+		Rollover.oldImageURL = getImg.imageURL;
+			
+    //09, 10, 11: Attach onmouseover and onmouseout event handlers to target.image property
+	
+	function overImg() {
+			"use strict";
+			target.image.onmouseover = function() {
+			target.image.src = newImageURL;	
+		}
+	}
+	
+	function outImg() {
+		target.image.onmouseout = function() {
+		target.image.src = oldImageURL;	
+		}
+	}
+//12, 13: Event handler to create 5 new Rollover objects once the page loads
+	window.addEventListener("load", newRollover, false);
+newRollover() {
+	var imgHome = new Rollover ("home", "../imagerollovers/home_over.png");
+ 	var imgSolutions = new Rollover ("solutions", "../imagerollovers/solutions_over.png");
+	var imgSupport = new Rollover ("support", "../imagerollovers/support_over.png");
+	var imgAboutUs = new Rollover ("aboutus", "../imagerollovers/aboutus_over.png");
+	var imgContact = new Rollover ("contact", "../imagerollovers/contact_over.png");
+}
+</script>	
+</head>
+
+<body>
+	<!-- 01 -->
+	<img  src="home.png" id="homeImg">
+    <img  src="aboutus.png" id="aboutImg">
+    <img  src="solutions.png" id="solImg">
+    <img  src="support.png" id="suppImg">
+    <img  src="contactus.png" id="contImg">
+
+</body>
+</html>
